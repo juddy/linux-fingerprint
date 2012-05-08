@@ -1,0 +1,148 @@
+Simple bash script to collect system details.
+
+Creates two files by default:
+
+/var/tmp/$HOSTNAME.$DATE.txt
+and
+/var/tmp/$HOSTNAME.$DATE.htm
+
+I've been pushing this script down the road for a while, and it's come in very handy.
+
+Distribute throughout your cluster and upload the resulting files.. Copy and paste the HTML into your favorite Wiki, or whatever.
+
+Use the results to upload claims of falsified server capacity, gain insight into your server infrastructure, or justify a purchase request.
+
+--------------------------------------------------------------------------------
+Example:
+
+----------------------------
+----------------------------
+System Configuration report for box
+
+Tue May  8 15:37:49 CDT 2012
+
+----------------------------
+----------------------------
+
+
+Debian Linux version:
+
+wheezy/sid
+
+
+
+----------------------------
+Package and software information
+----------------------------
+Debian packages:
+
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                           Version                        Description
++++-==============================================-==============================-==============================================================================
+ii  abiword                                        2.9.2+svn20120215-2            efficient, featureful word processor with collaboration
+-- 8< -- SNIPPED FOR BREVITY -- 8< --
+ii  zutils                                         0.9-4                          utilities for dealing with compressed files transparently
+
+----------------------------
+
+
+----------------------------
+System and Kernel information for box
+Processor cores: 2
+Processor speed: 2594.315 MHz
+Processor type: Other
+Total RAM: 8181188 kB
+----------------------------
+----------------------------
+Linux kernel version:
+----------------------------
+
+Linux box 3.2.0-1-amd64 #1 SMP Sun Feb 5 15:17:15 UTC 2012 x86_64 GNU/Linux
+
+----------------------------
+
+
+----------------------------
+System hardware information
+Processor cores: 2
+Processor speed: 2594.315 MHz
+Total RAM: 8181188 kB
+----------------------------
+'/usr/sbin/dmidecode' output:
+----------------------------
+
+# dmidecode 2.11
+SMBIOS 2.4 present.
+37 structures occupying 1161 bytes.
+Table at 0x000F0100.
+
+-- 8< -- SNIPPED FOR BREVITY -- 8< --
+
+End Of Table
+
+
+----------------------------
+/proc/cpuinfo
+----------------------------
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Pentium(R) CPU G620 @ 2.60GHz
+stepping	: 7
+microcode	: 0x1a
+cpu MHz		: 2594.315
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave lahf_lm arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 5188.63
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Pentium(R) CPU G620 @ 2.60GHz
+stepping	: 7
+microcode	: 0x1a
+cpu MHz		: 2594.315
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 2
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave lahf_lm arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 5187.98
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+----------------------------
+----------------------------
+
+
+System Configuration report for box
+----------------------------
